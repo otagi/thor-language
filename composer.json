@@ -1,0 +1,34 @@
+{
+    "name": "thor/language",
+    "description": "Multilingual features for Laravel 4",
+    "keywords": ["i18n", "laravel", "multilingual", "translation", "language", "locale"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Javier Aguilar",
+            "homepage": "http://www.mjolnic.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "illuminate/container": ">=4.1",
+        "illuminate/support": ">=4.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*",
+        "laravel/framework": ">=4.1"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Thor\\Language\\": ["src"]
+        },
+        "psr-4": {
+            "Thor\\Language\\": ["tests", "tests/testcases"]
+        }
+    },
+    "minimum-stability": "stable"
+}
